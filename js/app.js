@@ -54,13 +54,13 @@ function welcomeMessage(name, gender, skipMessage) {
     } else if (gender === "female" || gender === "Female") {
         title = "Ms."
     }
-
-    let message = `Welcome ${skipMessage ? "" : " " + title} ${name}!`;
-    // this is an if statement, 
-    // if skipMessage is true than do not add title
-    // if skipMessage is false than add title 
-
-    alert(message);
+     let message = `Welcome ${title} ${name}!`;
+    if (skipMessage === true) {
+        
+    } else {
+         alert(message);
+    }
+   
 }
 
 // Additional questions function 
